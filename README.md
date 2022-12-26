@@ -17,9 +17,11 @@ docker-compose up -d
 this will start dynamodb locally
 
 
-To run Unit tests
+To run Unit/integration tests
 ```
-yarn run unit:test
+yarn run test
+#  and for coverage
+yarn run coverage
 ```
 
 to run the project offline 

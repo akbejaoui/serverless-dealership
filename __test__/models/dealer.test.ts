@@ -1,5 +1,5 @@
 import {describe, expect, test} from '@jest/globals';
-import DealerModel, { DealerInterface } from '../../models/Dealer';
+import DealerModel, { DealerInterface } from '@models/Dealer';
 
 
 describe("Dealer model tests", () => {

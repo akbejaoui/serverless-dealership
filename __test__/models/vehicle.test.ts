@@ -1,7 +1,7 @@
 import { describe, expect, test } from "@jest/globals"
 
-import VehicleTransmissionEnum from "../../models/vehicleTransmissionEnums"
-import VehicleModel, { VehicleInterface } from "./../../models/vehicle"
+import VehicleTransmissionEnum from "@models/vehicleTransmissionEnums"
+import VehicleModel, { VehicleInterface } from "@models/vehicle"
 
 const vehicleData = {
     dealer_id: "dealer_random_id",

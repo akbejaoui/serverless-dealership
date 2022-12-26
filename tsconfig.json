@@ -13,12 +13,10 @@
     "resolveJsonModule": true,
     "types" : [ "node", "mocha"]
   },
-  "include": ["src/**/*.ts", "serverless.ts"],
+  "include": ["__test__", "src/**/*.ts", "serverless.ts"],
   "exclude": [
     "node_modules/**/*",
     ".serverless/**/*",
-    ".webpack/**/*",
-    "_warmup/**/*",
     ".vscode/**/*"
   ],
   "ts-node": {

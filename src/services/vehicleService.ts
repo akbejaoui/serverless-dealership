@@ -1,4 +1,4 @@
-import VehicleModel, { VehicleInterface } from "@models/Vehicle"
+import VehicleModel, { VehicleInterface } from "@models/vehicle"
 import { createItem, get, scan, updateItem, deleteItem } from "./dynamoService"
 import { generateUpdateQuery } from "@libs/updateExpressionGenerator"
 

@@ -3,20 +3,21 @@ import { startServerAndCreateLambdaHandler } from '@as-integrations/aws-lambda';
 import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge'
 
 // Types
-// import dealerType from '../data/types/dealer.type';
-//import vehicleType from '../data/types/vehicle.type';
+import dealerType from '@graphql/types/dealer.type';
+import vehicleType from '@graphql/types/vehicle.type';
 
 // Resolvers
-// import dealerResolver from '../data/resolvers/dealer.resolver';
-// import vehicleResolver from '../data/resolvers/vehicle.resolver';
+import dealerResolver from '@graphql/resolvers/dealer.resolver';
+import vehicleResolver from '@graphql/resolvers/vehicle.resolver';
 
-//const typeDefs = mergeTypeDefs([dealerType, vehicleType]);
-//const resolvers = mergeResolvers([dealerResolver, vehicleResolver]);
+const typeDefs = mergeTypeDefs([dealerType, vehicleType]);
+const resolvers = mergeResolvers([dealerResolver, vehicleResolver]);
 
 
 
 const server = new ApolloServer({
-    
+    typeDefs,
+    resolvers
 })
 
 exports.graphql = startServerAndCreateLambdaHandler(server);

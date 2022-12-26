@@ -1,4 +1,4 @@
-import DealerModel, { DealerInterface } from "@models/Dealer"
+import DealerModel, { DealerInterface } from "@models/dealer"
 
 import { createItem, get, scan, updateItem, deleteItem } from "./dynamoService"
 

@@ -4,7 +4,7 @@ import type { AWS } from "@serverless/typescript"
 import dynamoDbTables from "./dynamodb/db-tables"
 
 // serverless function - graphql server
-import { dealership } from "@functions/index"
+import { dealership } from "./src/index"
 
 
 const SERVICE_NAME = "serverless-dealership"

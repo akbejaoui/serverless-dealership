@@ -9,7 +9,9 @@
     "private": false,
     "scripts": {
         "unit:test": "jest",
-        "coverage": "jest --coverage"
+        "coverage": "jest --coverage",
+        "dev": "sls offline",
+        "deploy": "sls deploy --stage dev"
     },
     "devDependencies": {
         "@jest/globals": "^29.3.1",

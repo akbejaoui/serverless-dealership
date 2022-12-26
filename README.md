@@ -27,6 +27,10 @@ to run the project offline
 yarn run dev
 ```
 
+to deploy to dev stage
+```
+yarn run deploy
+```
 
 ## Graphql
 ### Mutations

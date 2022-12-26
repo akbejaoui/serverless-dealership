@@ -4,3 +4,4 @@ coverage
 .esbuild
 .DS_Store
 .env
+.serverless

@@ -18,6 +18,7 @@ const serverlessConfiguration: AWS = {
         name: "aws",
         runtime: "nodejs14.x",
         stage: STAGE,
+        region: "eu-central-1",
         apiGateway: {
             minimumCompressionSize: 1024,
             shouldStartNameWithService: true,
@@ -41,7 +42,7 @@ const serverlessConfiguration: AWS = {
                             "dynamodb:UpdateItem",
                             "dynamodb:DeleteItem",
                         ],
-                        Resource: "arn:aws:dynamodb:${aws:region}:*:table/${SERVICE_NAME}-${sls:stage}",
+                        Resource: "arn:aws:dynamodb:${aws:region}:*:table/"+SERVICE_NAME+"-table-${sls:stage}",
                     },
                 ],
             },

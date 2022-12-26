@@ -3,6 +3,9 @@ import type { AWS } from "@serverless/typescript"
 // DynamoDB
 import dynamoDbTables from "./dynamodb/db-tables"
 
+// serverless function - graphql server
+import { dealership } from "@functions/index"
+
 
 const SERVICE_NAME = "serverless-dealership"
 const STAGE = "dev"
@@ -45,7 +48,7 @@ const serverlessConfiguration: AWS = {
         },
     },
     // import the function via paths
-    functions: {  },
+    functions: { dealership },
     package: { individually: true },
     custom: {
         stage: '${opt:stage, self:provider.stage}',

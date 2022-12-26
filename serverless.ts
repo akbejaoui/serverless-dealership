@@ -1,5 +1,7 @@
 import type { AWS } from "@serverless/typescript"
 
+// DynamoDB
+import dynamoDbTables from "./dynamodb/db-tables"
 
 
 const SERVICE_NAME = "serverless-dealership"

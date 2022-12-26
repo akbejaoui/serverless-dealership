@@ -20,10 +20,11 @@ export default class Dealer implements ModelMapper {
         this._dealerName = dealer_name
     }
 
-    getMappedObject = <DealerInterface>() => ({
-        dealer_id: `dealer_${this._dealerId}`,
-        dealer_name: this._dealerName,
-        created_at: new Date().toISOString(),
-        last_updated: new Date().toISOString(),
-    }) as DealerInterface
+    getMappedObject = <DealerInterface>() =>
+        ({
+            dealer_id: `dealer_${this._dealerId}`,
+            dealer_name: this._dealerName,
+            created_at: new Date().toISOString(),
+            last_updated: new Date().toISOString(),
+        } as DealerInterface)
 }

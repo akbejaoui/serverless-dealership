@@ -35,6 +35,11 @@ yarn run deploy
 ```
 
 ## Graphql
+
+```
+POST: http://localhost:3000/dev/graphql
+```
+
 ### Mutations
 
 ```
